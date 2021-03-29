@@ -6,7 +6,9 @@ import Layout from "./components/Layout";
 function App() {
   return (
     <div className="App">
-      <Layout />
+      <div className="Body">
+        <Layout />
+      </div>
     </div>
   );
 }
