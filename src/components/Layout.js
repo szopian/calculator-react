@@ -40,7 +40,6 @@ const Layout = (props) => {
   return (
     <div className="frame">
       <div className="calculator">
-        <br></br>
         <img />
         <Output user={input} answer={result} />
         <div className="keys">
