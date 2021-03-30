@@ -1,5 +1,6 @@
 import React from "react";
 import "./Layout.css";
+import Output from "./Output";
 
 const Layout = (props) => {
   const handleClick = () => {};
@@ -7,6 +8,7 @@ const Layout = (props) => {
     <div className="frame">
       <div className="calculator">
         <br></br>
+        <Output />
         <img />
         <div className="keys">
           <input
