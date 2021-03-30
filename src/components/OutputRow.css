@@ -4,6 +4,7 @@
 }
 
 .screen {
+  outline: none;
   width: 320px;
   height: 60px;
   padding: 15px 30px;
