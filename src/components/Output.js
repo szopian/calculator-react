@@ -1,5 +1,5 @@
 import React from "react";
-import OutputRow from "../components/OutputRow";
+import OutputRow from "./OutputRow";
 
 const Output = (props) => {
   return (

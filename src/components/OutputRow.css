@@ -1,0 +1,15 @@
+:root {
+  --box-shadow: -6px -6px 9px #fff, 6px 6px 9px rgba(0, 0, 0, 0.4);
+  --inset-shadow: inset -6px -6px 9px #fff, inset 6px 6px 9px rgba(0, 0, 0, 0.4);
+}
+
+.screen {
+  width: 320px;
+  height: 60px;
+  padding: 15px 30px;
+  text-align: right;
+  border: none;
+  border-radius: 30px;
+  text-shadow: -1px -1px 2px #fff, 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: var(--inset-shadow);
+}

@@ -7,7 +7,7 @@ const OutputRow = (props) => {
       <input
         type="text"
         readOnly
-        className="scren"
+        className="screen"
         style={props.textSize}
         value={props.value}
       ></input>
