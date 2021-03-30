@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Layout.css";
 import Output from "./Output";
 
 const Layout = (props) => {
+  let [input, setInput] = useState("0");
+  let [result, setResult] = useState("");
+
   const handleClick = () => {};
   return (
     <div className="frame">
@@ -64,19 +67,19 @@ const Layout = (props) => {
           <input
             type="button"
             value={"4"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
             type="button"
             value={"5"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
             type="button"
             value={"6"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
@@ -89,7 +92,7 @@ const Layout = (props) => {
           <input
             type="button"
             value={"1"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
@@ -127,7 +130,7 @@ const Layout = (props) => {
           <input
             type="button"
             value={"="}
-            className="button clear"
+            className="button operator"
             onClick={handleClick}
           ></input>
         </div>
