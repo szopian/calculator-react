@@ -45,13 +45,13 @@ const Layout = (props) => {
           <input
             type="button"
             value={"8"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
             type="button"
             value={"9"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
@@ -95,13 +95,13 @@ const Layout = (props) => {
           <input
             type="button"
             value={"2"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
             type="button"
             value={"3"}
-            className="button "
+            className="button"
             onClick={handleClick}
           ></input>
           <input
@@ -111,16 +111,17 @@ const Layout = (props) => {
             onClick={handleClick}
           ></input>
 
+          <span></span>
           <input
             type="button"
             value={"0"}
-            className="button clear"
+            className="button"
             onClick={handleClick}
           ></input>
           <input
             type="button"
             value={"."}
-            className="button clear"
+            className="button"
             onClick={handleClick}
           ></input>
           <input
