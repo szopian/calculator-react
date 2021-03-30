@@ -6,13 +6,43 @@ const Layout = (props) => {
   let [input, setInput] = useState("0");
   let [result, setResult] = useState("");
 
-  const handleClick = () => {};
+  const handleClick = (e) => {
+    const value = e.target.value;
+    if (value === "=") {
+      if (input !== "") {
+        let res = "";
+        try {
+          res = eval(input);
+        } catch (err) {
+          setResult("Math error");
+        }
+        if (res === undefined) {
+          setResult("Math error");
+        } else {
+          setResult(input + "=");
+          setInput(res);
+        }
+      }
+    } else if (value === "C") {
+      setInput("0");
+      setResult("");
+    } else if (value === "DEL") {
+      let str = input;
+      str = str.slice(0, -1);
+      setInput(str);
+    } else if (input === "0") {
+      setInput(value);
+    } else {
+      setInput((input += value));
+    }
+  };
+
   return (
     <div className="frame">
       <div className="calculator">
         <br></br>
-        <Output />
         <img />
+        <Output user={input} answer={result} />
         <div className="keys">
           <input
             type="button"
@@ -114,7 +144,7 @@ const Layout = (props) => {
             onClick={handleClick}
           ></input>
 
-          <span></span>
+          <span className="sign">//GS</span>
           <input
             type="button"
             value={"0"}

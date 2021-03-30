@@ -50,3 +50,13 @@
 .button.clear {
   color: var(--alert-color);
 }
+
+.sign {
+  padding: auto;
+  margin: auto;
+  cursor: pointer;
+}
+
+.sign:hover {
+  color: #66fcf1;
+}
